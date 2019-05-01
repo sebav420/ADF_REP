@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText3",
+	"name": "ADLS_Master_FAA",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStore_Source",
@@ -9,10 +9,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"folderPath": "enriched"
+				"fileName": "FAAmaster.txt",
+				"folderPath": "enriched/faa"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
