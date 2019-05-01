@@ -26,7 +26,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureDataLakeStoreWriteSetting"
+							"type": "AzureBlobStorageWriteSetting"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSetting",
@@ -44,7 +44,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ADLS_Master_FAA",
+						"referenceName": "Blob_MasterFAA_File",
 						"type": "DatasetReference"
 					}
 				]
