@@ -7,13 +7,29 @@
 			"metadata": "Data Factory Name",
 			"defaultValue": "ADFTutorialDataFactory420"
 		},
+		"AzStorage_Staging_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzStorage_Staging'"
+		},
+		"AzureLinkedStorageABS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureLinkedStorageABS'"
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
 		},
-		"AzStorage_Staging_connectionString": {
+		"HDInsight_OnDemand_clusterPassword": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzStorage_Staging'"
+			"metadata": "Secure string for 'clusterPassword' of 'HDInsight_OnDemand'"
+		},
+		"HDInsight_OnDemand_clusterSshPassword": {
+			"type": "secureString",
+			"metadata": "Secure string for 'clusterSshPassword' of 'HDInsight_OnDemand'"
+		},
+		"HDInsight_OnDemand_servicePrincipalKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'servicePrincipalKey' of 'HDInsight_OnDemand'"
 		},
 		"AzureDataLakeStore_Source_properties_typeProperties_dataLakeStoreUri": {
 			"type": "string",
@@ -30,6 +46,26 @@
 		"AzureDataLakeStore_Source_properties_typeProperties_resourceGroupName": {
 			"type": "string",
 			"defaultValue": "ADFTutorialResourceGroup"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_hostSubscriptionId": {
+			"type": "string",
+			"defaultValue": "d23af54e-f44c-4acb-92fe-59863bb601e4"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_clusterResourceGroup": {
+			"type": "string",
+			"defaultValue": "ADFTutorialResourceGroup"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "19a2bb32-55fa-4d9d-97fd-3dfc2ec61c70"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "f3fbefe4-0e6e-453c-a762-4f77128e85aa"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_clusterUserName": {
+			"type": "string",
+			"defaultValue": "seba"
 		},
 		"containerUri": {
 			"type": "string",
@@ -58,11 +94,23 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzStorage_Staging_connectionString": {
+						"value": "[parameters('AzStorage_Staging_connectionString')]"
+					},
+					"AzureLinkedStorageABS_connectionString": {
+						"value": "[parameters('AzureLinkedStorageABS_connectionString')]"
+					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
 					},
-					"AzStorage_Staging_connectionString": {
-						"value": "[parameters('AzStorage_Staging_connectionString')]"
+					"HDInsight_OnDemand_clusterPassword": {
+						"value": "[parameters('HDInsight_OnDemand_clusterPassword')]"
+					},
+					"HDInsight_OnDemand_clusterSshPassword": {
+						"value": "[parameters('HDInsight_OnDemand_clusterSshPassword')]"
+					},
+					"HDInsight_OnDemand_servicePrincipalKey": {
+						"value": "[parameters('HDInsight_OnDemand_servicePrincipalKey')]"
 					},
 					"AzureDataLakeStore_Source_properties_typeProperties_dataLakeStoreUri": {
 						"value": "[parameters('AzureDataLakeStore_Source_properties_typeProperties_dataLakeStoreUri')]"
@@ -75,6 +123,21 @@
 					},
 					"AzureDataLakeStore_Source_properties_typeProperties_resourceGroupName": {
 						"value": "[parameters('AzureDataLakeStore_Source_properties_typeProperties_resourceGroupName')]"
+					},
+					"HDInsight_OnDemand_properties_typeProperties_hostSubscriptionId": {
+						"value": "[parameters('HDInsight_OnDemand_properties_typeProperties_hostSubscriptionId')]"
+					},
+					"HDInsight_OnDemand_properties_typeProperties_clusterResourceGroup": {
+						"value": "[parameters('HDInsight_OnDemand_properties_typeProperties_clusterResourceGroup')]"
+					},
+					"HDInsight_OnDemand_properties_typeProperties_servicePrincipalId": {
+						"value": "[parameters('HDInsight_OnDemand_properties_typeProperties_servicePrincipalId')]"
+					},
+					"HDInsight_OnDemand_properties_typeProperties_tenant": {
+						"value": "[parameters('HDInsight_OnDemand_properties_typeProperties_tenant')]"
+					},
+					"HDInsight_OnDemand_properties_typeProperties_clusterUserName": {
+						"value": "[parameters('HDInsight_OnDemand_properties_typeProperties_clusterUserName')]"
 					}
 				}
 			},

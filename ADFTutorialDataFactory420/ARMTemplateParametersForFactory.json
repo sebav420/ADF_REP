@@ -5,10 +5,22 @@
 		"factoryName": {
 			"value": "ADFTutorialDataFactory420"
 		},
+		"AzStorage_Staging_connectionString": {
+			"value": ""
+		},
+		"AzureLinkedStorageABS_connectionString": {
+			"value": ""
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
-		"AzStorage_Staging_connectionString": {
+		"HDInsight_OnDemand_clusterPassword": {
+			"value": ""
+		},
+		"HDInsight_OnDemand_clusterSshPassword": {
+			"value": ""
+		},
+		"HDInsight_OnDemand_servicePrincipalKey": {
 			"value": ""
 		},
 		"AzureDataLakeStore_Source_properties_typeProperties_dataLakeStoreUri": {
@@ -22,6 +34,21 @@
 		},
 		"AzureDataLakeStore_Source_properties_typeProperties_resourceGroupName": {
 			"value": "ADFTutorialResourceGroup"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_hostSubscriptionId": {
+			"value": "d23af54e-f44c-4acb-92fe-59863bb601e4"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_clusterResourceGroup": {
+			"value": "ADFTutorialResourceGroup"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_servicePrincipalId": {
+			"value": "19a2bb32-55fa-4d9d-97fd-3dfc2ec61c70"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_tenant": {
+			"value": "f3fbefe4-0e6e-453c-a762-4f77128e85aa"
+		},
+		"HDInsight_OnDemand_properties_typeProperties_clusterUserName": {
+			"value": "seba"
 		}
 	}
 }
